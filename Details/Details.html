@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <title>Details</title>
+    <style>
+        body {
+            background-color: dimgrey;
+            color: darkturquoise;
+            padding: 50px;
+            margin: 20px;
+        }
+    </style>
+    <head>
+        <meta charset="UTF-8"><meta name="description" content="Student Details">
+        <meta name="keywords" content="Details">
+        <meta name="author" content="Shakir Ul Islam">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+    <h1>Submit Your Details</h1>
+
+    <form action="/action_page.php">
+        
+    <fieldset>
+        <legend>Personal details</legend>
+
+        <h2>1. Name</h2>
+        <label for="fname">First Name</label><br>
+        <input type="text" id="fname" name="fname" required><br>
+        <label for="Mname">Middle Name</label><br>
+        <input type="text" id="Mname" name="Mname" required><br>
+        <label for="Lname">Last Name</label><br>
+        <input type="text" id="Lname" name="Lname" required><br>
+        <input type="hidden" id="custId" name="custId" value="111">
+
+        <h2>2. Address</h2>
+        <label for="pradress">Present adress</label><br>
+        <input type="text" id="pradress" required><br>
+        <label for="peadress">Permenant adress</label><br>
+        <input type="text" id="peadress"><br>
+
+        <h2>3. Date of Birth</h2>
+        <label for="dob"></label>
+        <input type="date" id="doc" name="dob">
+
+    </fieldset>
+        <h2>4. Course</h2>
+
+        <input type="radio" id="mtech" name="c1" value="MTech">
+        <label for="mtech">MTech</label>
+        <input type="radio" id="btech" name="c1" value="BTech">
+        <label for="btech">BTech</label>
+        <input type="radio" id="msc" name="c1" value="Msc">
+        <label for="msc">Msc</label>
+        <input type="radio" id="mba" name="c1" value="Mba">
+        <label for="mba">Mba</label>
+
+        <h2>5. Programming language</h2>
+        
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+
+        <h2>6. Hobbies</h2>
+        <input type="checkbox" id="h1" name="h1" value="Cricket">
+        <label for="h1">Cricket</label><br><br>
+        <input type="checkbox" id="h2" name="h2" value="Volley Ball">
+        <label for="h2">Volley Ball</label><br><br>
+        <input type="checkbox" id="h3" name="h3" value="Football">
+        <label for="h3">Football</label><br><br>
+        <input type="checkbox" id="h4" name="h4" value="Basketball">
+        <label for="h4">Basketball</label><br><br>
+
+        <h2>7. Stream</h2>
+        <label for="stream">Choose a Stream </label>
+        <select id="stream" name="stream">
+        <option value="Civil">Civil</option>
+        <option value="Electrical">Electrical</option>
+        <option value="ECE">ECE</option>
+        <option value="Computer">Computer</option>
+        <option value="ITE">ITE</option>
+        <option value="Mechanical">Mechanical</option>
+        <option value="Metallurgu">Metallurgy</option>
+        </select><br><br>
+        
+        <h2>8. Message</h2>
+        <textarea name="message" rows="5" cols="50">Message</textarea><br>
+
+    <h2>9. Percentage</h2>
+    <form action="/action_page.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        <input type="range" id="a" name="a" value="0">
+        100+<input type="text" id="b" name="b" value="0">=
+        <output name="x" for="a b"></output>
+    </form>
+
+    <h1>10. Contact Details</h1>
+        <label for="email">Email id</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="Phone">Phone number</label>
+        <input type="tel" id="phone" name="phone"><br><br>
+
+    <h2>11. Resume</h2>
+    <label for="resume"></label>
+    <input type="file" id="resume" name="resume"><br><br>
+
+    <h2>12. Photo</h2>
+    <label for="pic"></label>
+    <input type="file" id="pic" name="image">
+
+    <h2>13. Profile Link</h2>
+    <label for="linkedin">linkedin</label>
+    <input type="url" id="linkedin" name="linkedin" ><br>
+    <label for="Twitter">Twitter</label>
+    <input type="url" id="Twitter" name="Twitter" ><br>
+    <label for="facebook">Facebook</label>
+    <input type="url" id="facebook" name="facebook" >
+    <br><br>
+    <input type="submit" value="Submit">
+</form>
+    </body>
+</html>
